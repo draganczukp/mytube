@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>MeTube</title>
+	<link rel="stylesheet" href="dist/css/style.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+</head>
+
+<body>
+	<div id="top">
+		<a href="#" id="sidebar-toggle"><span class="burger"></span>
+		<span class="burger"></span>
+		<span class="burger"></span></a>
+		<a href="/" id="logo">
+			<img src="img/logo.jpg" alt="MyTube" height="50px">
+		</a>
+		<form action="/search" method="get">
+			<input type="text" name="searchtext" id="search" placeholder="Search">
+			<button type="submit" value="submit">
+				<i class="fas fa-search"></i>
+			</button>
+		</form>
+	</div>
+	<div id="main">
+		<div id="sidebar">
+			<div id="top-buttons" class="button-list">
+				<a href="/" class="active">Główna</a>
+				<a href="/top/">Na czasie</a>
+				<a href="/subscriptions/">Subskrypcje</a>
+			</div>
+			<div id="library-buttons" class="button-list">
+				<h3 class="list-title">biblioteka</h3>
+				<a href="/history/">Historia</a>
+				<a href="/towatch/">Do obejrzenia</a>
+				<a href="/payments">Zakupy</a>
+				<a href="/liked">Podoba mi się</a>
+			</div>
+			<div id="sub-buttons" class="button-list">
+				<h3 class="list-title">Subskrypcje</h3>
+				<a href="/subs/sub1">Sub 1</a>
+				<a href="/subs/sub2">Sub 2</a>
+				<a href="/subs/sub3">Sub 3</a>
+				<a href="/subs/sub4">Sub 4</a>
+				<a href="/subs/sub5">Sub 5</a>
+				<a href="/subs/sub1">Sub 1</a>
+				<a href="/subs/sub2">Sub 2</a>
+				<a href="/subs/sub3">Sub 3</a>
+				<a href="/subs/sub4">Sub 4</a>
+				<a href="/subs/sub5">Sub 5</a>
+			</div>
+		</div>
+		<div id="content"></div>
+	</div>
+</body>
+
+</html>
